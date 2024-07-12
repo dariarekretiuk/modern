@@ -1,0 +1,53 @@
+#header .slick-prev, .slick-next {
+  -webkit-transform: translate(-50%, 0%) rotate(90deg);
+  transform: translate(-50%, 0%);
+}
+
+#header .slick-next {
+  right: 60%;
+  bottom: 60%;
+}
+
+#header .slick-next:before {
+  content: url("../img/Arrow.svg");
+  position: absolute;
+  right: -600%;
+  top: 2000%;
+}
+
+[dir='rtl'] #header .slick-next:before {
+  content: url("../img/Arrow.svg");
+}
+
+/* Dots */
+#header .slick-dotted.slick-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#header .slick-dots {
+  /* right: 40%; */
+  bottom: 13%;
+  left: 97%;
+  -webkit-transform: translate(-50%, 0%) rotate(90deg);
+  transform: translate(-50%, 0%) rotate(90deg);
+}
+
+#header .slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: #fbfbfb;
+  content: url(../img/Ellipse_4.png);
+}
+
+#header .slick-dots li button:before {
+  content: url("../img/Ellipse_1.png");
+  text-align: center;
+  opacity: 1;
+  color: #fcf8f8;
+}
+/*# sourceMappingURL=rezet.css.map */
